@@ -9,6 +9,11 @@ import Adapter from 'enzyme-adapter-react-16';
 // but none of its react Children Component will render
 import { shallow, configure } from 'enzyme';
 
+// NOTE -  If componentDidMount or componentDidUpdate should be tested, use mount. 
+// If you want to test component lifecycle and children behavior, use mount.
+// mount(<Component />) for Full DOM rendering is ideal for use cases where you have components that may interact with DOM apis, 
+// or may require the full lifecycle in order to fully test the component (ie, componentDidMount etc.)
+
 // todo component
 import Todo from './Todo';
 
