@@ -45,6 +45,15 @@ describe('<Todo /> component Unit Tests', () => {
     // and it is set to a certain numeric value
 
     // Find method - Finds every node in the render tree of the current wrapper that matches the provided selector
+    // compound selector
+    // expect(wrapper.find('div.some-class')).to.have.lengthOf(3);
+
+    // CSS id selector
+    // expect(wrapper.find('#foo')).to.have.lengthOf(1);
+
+    // Component Constructors:
+    // expect(wrapper.find(Foo)).to.have.lengthOf(1);
+  
     // assertion to check if component renders li element with FIND selector
     // Find helper method can be use for finding 'Component instances' & also
     // to find normal 'HTML elements' as well
