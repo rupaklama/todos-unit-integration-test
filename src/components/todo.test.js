@@ -36,7 +36,10 @@ describe('<Todo /> component Unit Tests', () => {
   test('should render 1 <Todo /> component with props', () => {
     // shallow wrapper of our component to render with extra functionalities
     const component = shallow(<Todo {...props} />) // with above props
-    // expect(component.length).toBe(1);
+       
+    // note - node (ReactElement): array of nodes in the DOM
+    // One Single Node in an array of nodes
+    // expect(component.length).toBe(1); 
     expect(component).toHaveLength(1); // same as above
     // Jest - Use .toHaveLength to check that an object has a .length property 
     // and it is set to a certain numeric value
