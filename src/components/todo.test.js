@@ -44,6 +44,7 @@ describe('<Todo /> component Unit Tests', () => {
     // Jest - Use .toHaveLength to check that an object has a .length property 
     // and it is set to a certain numeric value
 
+    // Finds every node in the render tree of the current wrapper that matches the provided selector
     // assertion to check if component renders li element with FIND selector
     // Find helper method can be use for finding 'Component instances' & also
     // to find normal 'HTML elements' as well
